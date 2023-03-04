@@ -5,8 +5,8 @@ Rails.application.routes.draw do
 
   # nesting
   resources :restaurants do
-		resources :schedules, only: :create
-		resources :foods, only: :create
+		resources :schedules, only: [:new, :create]
+		resources :foods, only: [:new, :create]
 	end
 
 end
