@@ -2,7 +2,7 @@ class Restaurant < ApplicationRecord
 
   # Asociaciones
 	belongs_to :user #current_user.restaurant
-	has_many :schedules #.schedules.each do ||
+	has_many :schedules #.schedules.each do
 	has_many :foods
 
 	#Active Record

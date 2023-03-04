@@ -3,8 +3,9 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
-
+  #Asociaciones
+  has_many :restaurants
   # Active Record
 has_one_attached :photo
-
+has_many_attached :photo
 end
